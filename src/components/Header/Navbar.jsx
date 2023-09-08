@@ -17,7 +17,7 @@ const Navbar = () => {
     win.focus()
   }
   const menuAnimation = useSpring({
-     // Animate  for smooth expansion/collapse
+    // Animate  for smooth expansion/collapse
   })
 
   return (
@@ -60,20 +60,22 @@ const Navbar = () => {
             <a
               href='/'
               className='block mt-4 lg:inline-block lg:mt-0  hover:text-pink-500 mr-4 lg:ml-8  '
-              onClick={() => navigate('/about')}
+              onClick={() => navigate('/')}
             >
               Home
             </a>
-            <a
-              href='#responsive-header'
+            {/* <a
+              //   href='#faq'
               className='  block mt-4 lg:inline-block lg:mt-0 text-black-900 hover:text-pink-500 mr-4'
+              onClick={() => navigate('#faq')}
             >
               FAQs
-            </a>
+            </a> */}
             <a
-              href='/about'
+              //   href='/about'
               className='block mt-4 lg:inline-block lg:mt-0 text-black-900 hover:text-pink-500'
               size='txtRobotoRegular16'
+              onClick={() => navigate('/about')}
             >
               About
             </a>
