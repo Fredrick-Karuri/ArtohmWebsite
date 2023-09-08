@@ -11,7 +11,7 @@ const AboutHero = (props) => {
       >
         <div className="flex flex-col gap-6 md:items-center items-start justify-start max-w-[800px] py-28 w-full">
           <Text
-            className="leading-[120.00%] max-w-[800px] md:max-w-[] sm:max-w-full md:text-5xl sm:text-[42px] text-[56px] text-center text-white-A700 md:w-4/5"
+            className="leading-[120.00%] max-w-[800px] md:max-w-[] sm:max-w-full md:text-5xl sm:text-[32px] text-[56px] text-center text-white-A700 md:w-4/5 "
             size="txtLibreBaskervilleBold56"
           >
             {props?.heading}
