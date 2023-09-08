@@ -115,4 +115,5 @@ HomeTestimonial.defaultProps = {
   textOne: 'Art Collectors'
 }
 
+
 export default HomeTestimonial

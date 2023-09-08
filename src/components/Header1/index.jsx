@@ -95,11 +95,11 @@ const Header1 = props => {
 
   return (
     <>
-      {/* <header  className={`whole-nav ${isOpen ? 'show-nav' : ''}`}> */}
-      {/* <header className={`${props.className} ${isOpen ? 'show-nav' : ''}`}> */}
-     <header className={`header-container flex md:h-auto items-center justify-center md:m-0 m-2 md:ml-[0] px-16 md:px-5 shadow-bs sticky top-[0] w-full ${isOpen ? 'show-nav' : ''}`}>
-      
-
+      <header
+        className={`header-container flex md:h-auto items-center justify-center md:m-0 m-2 md:ml-[0] px-16 md:px-5 shadow-bs sticky top-[0] w-full ${
+          isOpen ? 'show-nav' : ''
+        }`}
+      >
         <div className='flex flex-row gap-8 items-center justify-between m-4 w-full'>
           <div className='header-row '>
             <Img
@@ -108,8 +108,6 @@ const Header1 = props => {
               alt='artohmlogo'
               onClick={() => navigate('/')}
             />
-            {/* <div onClick={() => setIsOpen(!isOpen)} className="mobile-menu"> */}
-            {/* <div onClick={() => { console.log('menu clicked'); setIsOpen(!isOpen); }} className="mobile-menu"> */}
             <div
               onClick={() => {
                 setIsOpen(!isOpen)

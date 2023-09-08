@@ -11,6 +11,9 @@ import AboutFeatures from "components/AboutFeatures";
 import AboutHero from "components/AboutHero";
 import AboutTestimonial from "components/AboutTestimonial";
 import Header1 from "components/Header1";
+import Navbar from 'components/Header/Navbar'
+import HomeTestimonial from "components/HomeTestimonial";
+
 
 import { handleSectionNavigation } from "utils";
 
@@ -28,7 +31,9 @@ const AboutPage = () => {
   return (
     <>
       <div className="flex flex-col font-roboto items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <Header1 className="bg-white-A700 flex h-[72px] md:h-auto items-center justify-center px-16 md:px-5 shadow-bs sticky top-[0] w-full" />
+        {/* <Header1 className="bg-white-A700 flex h-[72px] md:h-auto items-center justify-center px-16 md:px-5 shadow-bs sticky top-[0] w-full" /> */}
+        <Navbar/>
+
         <AboutHero
           className="bg-cover bg-no-repeat flex flex-col gap-6 h-[463px] items-center justify-center w-full"
           style={{ backgroundImage: "url('images/img_header.png')" }}
@@ -36,7 +41,9 @@ const AboutPage = () => {
         <AboutArtohm className="bg-white-A700 flex sm:flex-col flex-row md:gap-10 gap-20 items-center justify-between md:px-10 px-16 sm:px-5 py-28 w-full" />
         <AboutFeatures className="bg-red-300 flex flex-col font-lato md:gap-10 gap-20 items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full" />
         <AboutBenefits className="bg-white-A700 flex flex-col gap-20 items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full" />
-        <AboutTestimonial className="bg-white-A700 flex flex-col font-librebaskerville gap-12 items-center justify-center md:px-10 px-16 sm:px-5 py-28 w-full" />
+        {/* <AboutTestimonial className="bg-white-A700 flex flex-col font-librebaskerville gap-12 items-center justify-center md:px-10 px-16 sm:px-5 py-28 w-full" /> */}
+        <HomeTestimonial className='bg-white-A700 flex flex-col font-librebaskerville gap-20 items-center justify-start sm:p-[] md:px-10 px-16 sm:px-5 sm:py-14 py-28 w-full' />
+
         <AboutCta className="bg-white-A700 flex flex-col font-lato gap-20 h-[576px] md:h-auto items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full" />
         <AboutFaq
           className="bg-white-A700 flex flex-col font-lato md:gap-10 gap-20 items-center justify-start sm:p-[] md:px-10 px-16 sm:px-6 py-28 w-full"
