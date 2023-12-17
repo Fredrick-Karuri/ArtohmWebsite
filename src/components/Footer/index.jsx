@@ -17,7 +17,7 @@ const Footer = (props) => {
         <div className="flex md:flex-col flex-row md:gap-10 gap-16 items-start justify-start w-full">
           <div className="flex flex-1 flex-col gap-8 items-start justify-start max-w-[864px] w-full">
             <Img
-              className="h-11 w-[33px]"
+              className="h- w-[60px]"
               src="images/img_artohmlogo.svg"
               alt="artohmlogo_One"
             />
@@ -27,13 +27,13 @@ const Footer = (props) => {
                   className="text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.headingSeven}
+                  {props?.addressTitle}
                 </Text>
                 <Text
                   className="text-black-900 text-sm w-full"
                   size="txtLatoRegular14"
                 >
-                  {props?.useraddress}
+                  {props?.userAddress}
                 </Text>
               </div>
               <div className="flex flex-col gap-1 items-start justify-start w-full">
@@ -41,13 +41,13 @@ const Footer = (props) => {
                   className="text-black-900 text-sm w-full"
                   size="txtRobotoSemiBold14"
                 >
-                  {props?.headingEight}
+                  {props?.contactTitle}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[864px] md:max-w-full text-black-900 text-sm underline"
                   size="txtLatoRegular14"
                 >
-                  {props?.usercontact}
+                  {props?.userContact}
                 </Text>
               </div>
               <div className="flex flex-row gap-3 items-start justify-start w-auto">
@@ -118,10 +118,10 @@ const Footer = (props) => {
 };
 
 Footer.defaultProps = {
-  headingSeven: "Address:",
-  useraddress: "Nairobi, Kenya",
-  headingEight: "Contact:",
-  usercontact: (
+  addressTitle: "Address:",
+  userAddress: "Nairobi, Kenya",
+  contactTitle: "Contact:",
+  userContact: (
     <>
       +254 793 985 752
       <br />

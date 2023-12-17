@@ -23,13 +23,13 @@ const HomeHero = props => {
             <div className='flex flex-col gap-8 w-5/6  md:w-full'>
               <div className='flex flex-col gap-6 items-start justify-start w-full'>
                 <Text
-                  className='leading-[144.00%] md:leading-[144%] md:text-4xl sm:text-[32px] text-6xl  text-black-900 '
+                  className='leading-[132.00%] md:leading-[144%] md:text-4xl sm:text-[32px] text-6xl  text-black-900 '
                   size='txtLibreBaskervilleBold56Black900'
                 >
                   {props?.headingtext}
                 </Text>
                 <Text
-                  className='leading-[144.00%] sm:text-base text-black-900 sm:text-left text-2xl opacity-80 '
+                  className='leading-[136.00%] sm:text-base text-black-900 sm:text-left text-2xl opacity-80 '
                   size='txtLatoRegular18Black900'
                 >
                   {props?.descriptiontext}

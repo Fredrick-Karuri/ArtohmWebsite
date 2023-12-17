@@ -6,6 +6,7 @@ const HomeGallery = props => {
   return (
     <>
       <div className={props.className}>
+
         <div className='flex flex-col gap-6 items-center justify-start max-w-3xl w-full '>
           <Text
             className='text-5xl sm:text-[32px] md:text-[44px] text-black-900 text-center w-full'
@@ -39,7 +40,7 @@ const HomeGallery = props => {
                 className='w-full h-full object-cover'
                 src='images/img_placeholderimage_4.png'
                 alt='placeholderimag'
-              ></Img>
+                ></Img>
             </div>
           </div>
         </div>
