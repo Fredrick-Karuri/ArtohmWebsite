@@ -23,7 +23,7 @@ const AboutArtohm = (props) => {
           </div>
         </div>
         <Img
-          className="flex-1 md:flex-none md:h-[560px] h-[640px] sm:h-auto object-cover md:w-3/5 w-full"
+          className="flex-1 md:flex-none md:h-[560px] h-[640px] sm:h-auto object-cover md:w-full sm:w-full"
           src="images/img_placeholderimage_7.png"
           alt="placeholderimag"
         />

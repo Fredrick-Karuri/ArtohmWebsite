@@ -10,7 +10,6 @@ import {
   Text
 } from 'components'
 import Footer from 'components/Footer'
-import Header1 from 'components/Header1'
 import HomeBenefits from 'components/HomeBenefits'
 import HomeCta from 'components/HomeCta'
 import HomeFeatures from 'components/HomeFeatures'

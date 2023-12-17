@@ -9,8 +9,6 @@ import AboutCta from 'components/AboutCta'
 import AboutFaq from 'components/AboutFaq'
 import AboutFeatures from 'components/AboutFeatures'
 import AboutHero from 'components/AboutHero'
-import AboutTestimonial from 'components/AboutTestimonial'
-import Header1 from 'components/Header1'
 import Navbar from 'components/Header/Navbar'
 import HomeTestimonial from 'components/HomeTestimonial'
 
@@ -30,7 +28,6 @@ const AboutPage = () => {
   return (
     <>
       <div className='flex flex-col font-roboto items-start justify-start mx-auto w-auto sm:w-full md:w-full'>
-        {/* <Header1 className="bg-white-A700 flex h-[72px] md:h-auto items-center justify-center px-16 md:px-5 shadow-bs sticky top-[0] w-full" /> */}
         <Navbar />
 
         <AboutHero
@@ -46,7 +43,7 @@ const AboutPage = () => {
         <AboutCta className='bg-white-A700 flex flex-col font-lato gap-20 h-[576px] md:h-auto items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full' />
         <AboutFaq
           className=' bg-white-A700 flex flex-col font-lato md:gap-10 gap-20 items-center justify-start sm:p-[] md:px-10 px-16 sm:px-6 py-28 w-full'
-          id='faq'
+          id='#faq'
         />
         <footer className='bg-pink-50 flex font-lato items-center justify-center px-16 md:px-5 py-20 w-full'>
           <div className='flex flex-col md:gap-10 gap-20 items-center justify-center w-full'>

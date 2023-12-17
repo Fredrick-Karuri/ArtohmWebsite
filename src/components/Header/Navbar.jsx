@@ -16,14 +16,11 @@ const Navbar = () => {
     )
     win.focus()
   }
-  const menuAnimation = useSpring({
-    // Animate  for smooth expansion/collapse
-  })
+  const menuAnimation = useSpring({})
 
   return (
-    // className='flex header-container items-center justify-between flex-wrap  p-6 w-full sticky top-[0] shadow-bs mr'
     <animated.nav
-      className={`flex header-container items-center justify-between flex-wrap  p-6 w-full sticky top-[0] shadow-bs mr ${
+      className={`flex header-container items-center justify-between flex-wrap px-16 p-2 md:px-4  w-full sticky top-[0] shadow-bs mr ${
         isOpen ? 'menu-open' : ''
       }`}
       style={{
@@ -31,18 +28,18 @@ const Navbar = () => {
         overflow: isOpen ? 'visible' : 'hidden' // Prevent content overflow
       }}
     >
-      <div className='flex items-center flex-shrink-0 text-white mr-6'></div>
+      <div className='flex items-center flex-shrink-0 text-white mx-2'></div>
       <div className='lg:hidden '></div>
       <div className='header-row '>
         <Img
-          className='common-pointer cursor-pointer h-14 w-[40px]'
+          className='common-pointer cursor-pointer h-14 w-[40px] '
           src='images/img_artohmlogo.svg'
           alt='artohmlogo'
           onClick={() => navigate('/')}
         />
         <div
           onClick={toggleMenu}
-          className={`mobile-menu ${isOpen ? 'open' : ''}`}
+          className={`mobile-menu  ${isOpen ? 'open' : ''}`}
           style={{}}
         >
           <div></div>
@@ -57,33 +54,25 @@ const Navbar = () => {
       >
         <div className='text-sm lg:flex-grow lg:ml-16 '>
           <div className='flex flex-row gap-4 sm:flex-col sm:gap-2 text-base lg:text-[18px]  text-gray-900'>
-            <a
+            <Text
               href='/'
-              className='block mt-4 lg:inline-block lg:mt-0  hover:text-pink-500 mr-4 lg:ml-8  '
+              className=' common-pointer block mt-4 lg:inline-block lg:mt-0  hover:text-pink-500 mr-4 lg:ml-8  '
               onClick={() => navigate('/')}
             >
               Home
-            </a>
-            {/* <a
-              //   href='#faq'
-              className='  block mt-4 lg:inline-block lg:mt-0 text-black-900 hover:text-pink-500 mr-4'
-              onClick={() => navigate('#faq')}
-            >
-              FAQs
-            </a> */}
-            <a
-              //   href='/about'
-              className='block mt-4 lg:inline-block lg:mt-0 text-black-900 hover:text-pink-500'
-              size='txtRobotoRegular16'
+            </Text>
+
+            <Text
+              className=' common-pointer block mt-4 lg:inline-block lg:mt-0 text-black-900 hover:text-pink-500'
               onClick={() => navigate('/about')}
             >
               About
-            </a>
+            </Text>
           </div>
         </div>
-        <div className='flex flex-col sm:items-start sm:mt-6 justify-center w-auto lg:mr-16'>
+        <div className='flex flex-col sm:items-start sm:mt-6 justify-center w-auto '>
           <Button
-            className='common-pointer bg-light_blue-A700 cursor-pointer font-roboto min-w-[168px] outline outline-[1px] outline-light_blue-A700 py-2.5 rounded-[19px] text-base text-center text-white-A700'
+            className='common-pointer bg-light_blue-A700 cursor-pointer font-roboto min-w-[168px] outline outline-[1px] outline-light_blue-A700 py-2.5 rounded-[19px] text-base text-center text-white-A700 hover:opacity-80'
             onClick={handleNavigate7}
           >
             Get Early Access
@@ -95,51 +84,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-{
-  /* <button
-    onClick={() => setIsOpen(!isOpen)}
-    className='flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white'
-  >
-    <svg
-    className='fill-current h-3 w-3'
-      viewBox='0 0 20 20'
-      xmlns='http://www.w3.org/2000/svg'
-      >
-      <title>Menu</title>
-      <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z' />
-      </svg>
-      </button> */
-}
-
-{
-  /* <div>
-<a
-onClick={handleNavigate7}
-className='  bg-light_blue-A700 text-white-A700 inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent   hover:text-black-900  mt-4 lg:mt-0'
-  
->
-Get Early Access
-</a>
-</div> */
-}
-
-{
-  /* <div
-  className={`w-6 h-1 bg-black <span class="math-inline"> ${isOpen ? 'opacity-0' : ''}`}
-></div>
-<div
-  className={`${
-    isOpen
-      ? 'transform rotate-[135deg] translate-x-[2px] translate-y-[2px]'
-      : ''
-  }`}
-></div>
-<div
-  className={` w-6 h-1 ${
-    isOpen
-      ? 'transform -rotate-[135deg] translate-x-[2px]  -translate-y-[2px]'
-      : ''
-  }`}
-></div> */
-}

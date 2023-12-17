@@ -210,7 +210,7 @@ ul li a{
 }
 /* flex md:h-auto items-center justify-center md:m-0 m-2 md:ml-[0] px-16 md:px-5 shadow-bs sticky top-[0] w-full */
 
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   .mobile-menu {
     display: none;
   }

@@ -20,26 +20,31 @@ const HomeGallery = props => {
             {props?.textTwo}
           </Text>
         </div>
-        <div className='flex sm:flex-col flex-row gap-4 items-start justify-start w-full'>
-          <Img
-            className='w-1/2 h-full object-cover sm:w-full '
-            src='images/img_placeholderimage_752x640.png'
-            alt='placeholderimag_One'
-          />
-
-          <div className='flex flex-col w-1/2 gap-8 sm:gap-4 items-start justify-start h-full sm:w-full'>
-            <Img
-              className='flex h-1/2 object-cover w-full'
-              src='images/img_placeholderimage_360x640.png'
-              alt='placeholderimag_Two'
-            />
-            <Img
-              className='flex h-full object-cover w-full'
-              src='images/img_placeholderimage_4.png'
-              alt='placeholderimag_Three'
-            />
+        <div className='max-h-3xl'>
+          <div className=' grid grid-cols-2 gap-3  '>
+            <div className=''>
+              <Img
+                className='w-full h-full object-cover'
+                src='images/img_placeholderimage_752x640.png'
+                alt='image of a woman in a white top, with a yellow background'
+              ></Img>
+            </div>
+            <div className=' grid gap-3'>
+              <Img
+                className='w-full h-full object-cover'
+                src='images/img_placeholderimage_360x640.png'
+                alt='image of a black cat '
+              ></Img>
+              <Img
+                className='w-full h-full object-cover'
+                src='images/img_placeholderimage_4.png'
+                alt='placeholderimag'
+              ></Img>
+            </div>
           </div>
         </div>
+
+        
       </div>
     </>
   )

@@ -4,7 +4,25 @@ import { Button, Img, PagerIndicator, Slider, Text } from 'components'
 
 const HomeTestimonial = props => {
   const sliderRef = React.useRef(null)
-  const [sliderState, setsliderState] = React.useState(0)
+  const [sliderState, setSliderState] = React.useState(0)
+  const [numSlides, setNumSlides] = React.useState(4)
+
+  // function to handle the slider moving to the next slide
+  const handleNextClick = () => {
+    // calculate the index of the next slide
+    const nextSlide =(sliderState + 1) % numSlides
+    // move the slider to the next slide
+    sliderRef.current.slideTo(nextSlide)
+
+  }
+
+  // function to handle the slider moving to the previous slide
+  const handlePrevClick = () => {
+    // calculate the index of the previous slide
+    const prevSlide = (sliderState - 1 + numSlides) % numSlides
+    // move the slider to the previous slide
+    sliderRef.current.slideTo(prevSlide)
+  }
 
   return (
     <>
@@ -20,7 +38,7 @@ const HomeTestimonial = props => {
               1050: { items: 1 }
             }}
             onSlideChanged={e => {
-              setsliderState(e?.item)
+              setSliderState(e?.item)
             }}
             ref={sliderRef}
             className='w-full'
@@ -28,10 +46,13 @@ const HomeTestimonial = props => {
               <React.Fragment key={Math.random()}>
                 <div className='flex flex-col items-center justify-between max-w-[1312px] mx-2.5'>
                   <div className='flex sm:flex-col flex-row md:gap-10 items-center justify-between w-full'>
-                    <Button className='border border-black-900_7e border-solid flex h-12 sm:hidden items-center justify-center p-4 rounded-[50%] w-12'>
+                    <Button
+                      className='border border-blue-600 border-solid flex h-12 sm:hidden items-center justify-center p-4 rounded-[50%] w-12'
+                      onClick={handlePrevClick}
+                    >
                       <Img
-                        className='h-4'
-                        src='images/img_arrowleft.svg'
+                        className='h-8 '
+                        src='images/arrow-left.svg'
                         alt='arrowleft'
                       />
                     </Button>
@@ -59,10 +80,15 @@ const HomeTestimonial = props => {
                         </div>
                       </div>
                     </div>
-                    <Button className='border border-black-900 border-solid flex h-12 items-center justify-center p-4 rounded-[50%] w-12 sm:hidden'>
+                    <Button
+                      className='border border-blue-600 border-solid flex h-12 items-center justify-center p-4 rounded-[50%] w-12 sm:hidden
+                    
+                    '
+                      onClick={handleNextClick}
+                    >
                       <Img
-                        className='h-4'
-                        src='images/img_arrowleft.svg'
+                        className='h-8'
+                        src='images/arrow-right.svg'
                         alt='arrowright'
                       />
                     </Button>
@@ -114,6 +140,5 @@ HomeTestimonial.defaultProps = {
   text: 'John and Lisa ',
   textOne: 'Art Collectors'
 }
-
 
 export default HomeTestimonial

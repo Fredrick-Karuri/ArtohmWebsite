@@ -16,7 +16,7 @@ const HomeBenefits = (props) => {
       <div className={props.className}>
         <div className="flex md:flex-col flex-row md:gap-10 gap-20 items-center justify-start md:justify-start w-full">
           <Img
-            className="flex-1 md:flex-none md:h-[500px] h-[640px] sm:h-auto max-h-[640px] md:max-h-[] object-cover sm:w-[] md:w-[]"
+            className="flex-1 md:flex-none md:h-[500px] h-[640px] sm:h-auto max-h-[640px]  object-cover  md:w-full"
             src="images/img_placeholderimage_640x616.png"
             alt="placeholderimag"
           />
