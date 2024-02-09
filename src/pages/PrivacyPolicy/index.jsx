@@ -7,6 +7,8 @@ const PrivacyPolicy = () => {
     month: 'long',
     day: 'numeric'
   })
+
+  const emailAddress = 'fred@aartohm.com'
   return (
     <div className='max-w-3xl mx-auto my-8 sm:mx-4'>
       <h1 className='text-3xl font-bold mb-4'>Artohm Privacy Policy</h1>
@@ -103,7 +105,11 @@ const PrivacyPolicy = () => {
       <h2 className='text-xl font-bold mt-6 mb-2'>12. Contact Us</h2>
       <p className='text-gray-700 mb-4'>
         If you have questions or concerns about this Privacy Policy, please
-        contact us at fred@aartohm.com
+        contact us at
+        <a className='text-blue-500' href={`mailto:${emailAddress}`}>
+          {' '}
+          {emailAddress}.
+        </a>
       </p>
     </div>
   )

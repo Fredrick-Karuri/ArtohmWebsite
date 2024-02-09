@@ -3,12 +3,19 @@
 import React from 'react'
 
 const TermsAndConditions = () => {
+  //manually setting up updated terms and conditions date
+  const lastUpdated = new Date('2024-02-09T00:00:00')
+
+  const emailAddress = 'fred@aartohm.com'
+
   return (
     <div className='max-w-2xl mx-auto my-8 sm:mx-4'>
       <h1 className='text-3xl font-bold mb-4 sm:text-2xl'>
         Artohm Terms and Conditions
       </h1>
-      <p className='text-sm mb-4'>Last updated: [Date]</p>
+      <p className='text-sm mb-4'>
+        Last updated: {lastUpdated.toLocaleDateString()}
+      </p>
 
       <h2 className='text-xl font-bold mt-6 mb-2'>1. Acceptance of Terms</h2>
       <p className='text-gray-700 mb-4'>
@@ -85,10 +92,12 @@ const TermsAndConditions = () => {
         Artohm, please contact us at [your email address].
       </p>
 
-        <h2 className='text-xl font-bold mt-6 mb-2'>12. Contact Us</h2>
+      <h2 className='text-xl font-bold mt-6 mb-2'>12. Contact Us</h2>
       <p className='text-gray-700 mb-4'>
         If you have any questions about these Terms and Conditions, please
-        contact us at [your email address].
+        contact us at <a 
+        className='text-blue-500'
+        href={`mailto:${emailAddress}`}> {emailAddress}. </a>
       </p>
     </div>
   )
