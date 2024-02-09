@@ -108,6 +108,8 @@ const Footer = props => {
                 {props?.linkFour}
               </Text>
               <Text
+                // navigate to terms and conditions
+                onClick={() => navigate('/terms-and-conditions')}
                 className='cursor-pointer text-black-900 text-sm underline w-auto'
                 size='txtLatoRegular14'
               >
